@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.button {
+  padding: .9375rem 1.1875rem;
+
+  background: $gradient-purple;
+  color: $white;
+
+  font-family: 'Montserrat';
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 1.375rem;
+
+  transition: $transition;
+
+  &:hover {
+    background: $gradient-purple-50;
+    cursor: pointer;
+  }
+}
