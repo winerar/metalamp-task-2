@@ -8,6 +8,8 @@ mixin button(options)
       - className = className + ' button_type_outline'
     when 'link'
       - className = className + ' button_type_link'
+    when 'circle'
+      - className = className + ' button_type_circle'
   
   case options.color
     when 'green'
