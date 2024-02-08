@@ -1,7 +1,15 @@
-@import '../../variables.scss';
+@import '@/variables.scss';
 
 .button {
-  padding: .9375rem 1.1875rem;
+  padding: .9375rem 1.25rem;
+  min-width: 2.75rem;
+  max-width: 20rem;
+  height: 2.75rem;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background: $gradient-purple;
   color: $white;
@@ -12,7 +20,8 @@
   text-transform: uppercase;
 
   border: none;
-  border-radius: 1.375rem;
+  border-radius: 2rem;
+  box-sizing: border-box;
 
   transition: $transition;
 
@@ -21,3 +30,8 @@
     cursor: pointer;
   }
 }
+
+@import './__icon/button__icon.scss';
+@import './__wrapper/button__wrapper.scss';
+@import './_type/button_type_outline.scss';
+@import './_width/button_width_f.scss';

@@ -1,2 +1,14 @@
+include ./__icon/button__icon
+include ./__wrapper/button__wrapper
+
 mixin button(options)
-  button(class = 'button')= options.title || 'Button'
+  case options.type 
+    when 'outline'
+      button(class='button button_type_outline')
+        +button__wrapper({text: options.title})
+    when 'icon'
+      button(class=`button${options.title ? ' button_width_f' : ''}`)
+        span= options.title || ''
+        +button__icon()
+    default
+      button(class='button')= options.title || ''
