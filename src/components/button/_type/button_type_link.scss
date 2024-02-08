@@ -1,0 +1,21 @@
+@import '@/variables.scss';
+
+.button_type_link {
+	padding: 0;
+	min-width: none;
+	max-width: none;
+	height: auto;
+
+	display: block;
+
+	color: $purple;
+	background: none;
+
+	border: none;
+
+	&:hover {
+		color: $dark-shade-50;
+		background: none;
+		cursor: pointer;
+	}
+}

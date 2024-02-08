@@ -2,13 +2,28 @@ include ./__icon/button__icon
 include ./__wrapper/button__wrapper
 
 mixin button(options)
+  - let className = 'button'
   case options.type 
     when 'outline'
-      button(class='button button_type_outline')
+      - className = className + ' button_type_outline'
+    when 'link'
+      - className = className + ' button_type_link'
+  
+  case options.color
+    when 'green'
+      - className = className + ' button_color_green'
+
+  case options.width
+    when 'full'
+      - className = className + ' button_width_f'
+  
+  button(class=className)
+    case options.type 
+      when 'outline'
         +button__wrapper({text: options.title})
-    when 'icon'
-      button(class=`button${options.title ? ' button_width_f' : ''}`)
+      default
         span= options.title || ''
-        +button__icon()
-    default
-      button(class='button')= options.title || ''
+    
+    case options.icon
+      when true
+          +button__icon()

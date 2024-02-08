@@ -5,11 +5,12 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    title Пример страницы
+    title UI Kit
   body
     .wrapper
-      +button({title: 'Click Me!'})
-      +button({title: 'Click Me!', type: 'outline'})
-      +button({title: 'Перейти к оплате', type: 'icon'})
+      +button({title: 'Click Me'})
+      +button({title: 'Click Me', type: 'outline'})
+      +button({title: 'Click Me', type: 'link'})
+      +button({title: 'Перейти к оплате', width: 'full', icon: true})
       +button({title: '1'})
-      +button({type: 'icon'})
+      +button({icon: true})
