@@ -1,0 +1,6 @@
+mixin like-button__icon(options)
+  span.like-button__icon
+    if options.filled
+      img(src=require('@/components/like-button/__icon/favorite.svg').default)
+    else 
+      img(src=require('@/components/like-button/__icon/favorite_border.svg').default)

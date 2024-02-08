@@ -1,0 +1,24 @@
+@import '@/variables.scss';
+
+.like-button {
+	padding: 0;
+	min-width: 2.5rem;
+	width: fit-content;
+	box-sizing: border-box;
+	height: 1.25rem;
+
+	display: grid;
+	grid-template-columns: 1.25rem auto;
+
+	color: $dark-shade-25;
+	background-color: $white;
+
+	border: 0.0625rem solid $dark-shade-25;
+	border-radius: $border-rounded;
+
+	cursor: pointer;
+}
+
+@import './__icon/like-button__icon.scss';
+@import './__text/like-button__text.scss';
+@import './_active/like-button_active.scss';

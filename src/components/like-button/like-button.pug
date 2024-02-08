@@ -1,0 +1,12 @@
+include ./__icon/like-button__icon
+include ./__text/like-button__text
+
+mixin like-button(options)
+  - let className = 'like-button'
+
+  if options.active 
+    - className += ' like-button__active'
+  
+  button(class=className)
+    +like-button__icon({filled: options.active})
+    +like-button__text({text: options.text})
