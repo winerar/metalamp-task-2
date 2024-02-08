@@ -1,6 +1,6 @@
 $dark-shade-100: rgba(31, 32, 65, 1);
 $dark-shade-75: rgba(31, 32, 65, 0.75);
-$dark-shade-50: rgba(31, 32, 65, 0.50);
+$dark-shade-50: rgba(31, 32, 65, 0.5);
 $dark-shade-25: rgba(31, 32, 65, 0.25);
 $dark-shade-5: rgba(31, 32, 65, 0.05);
 $purple: #bc9cff;
@@ -9,7 +9,13 @@ $white: #ffffff;
 
 $gradient-purple: linear-gradient($purple, #8ba4f9);
 $gradient-green: linear-gradient($green, #66d2ea);
-$gradient-purple-50: linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
-$gradient-green-50: linear-gradient(rgba(111, 207, 151, 0.5), rgba(102, 210, 234, 0.5));
+$gradient-purple-50: linear-gradient(
+	rgba(188, 156, 255, 0.5),
+	rgba(139, 164, 249, 0.5)
+);
+$gradient-green-50: linear-gradient(
+	rgba(111, 207, 151, 0.5),
+	rgba(102, 210, 234, 0.5)
+);
 
 $transition: all 0.3s ease;

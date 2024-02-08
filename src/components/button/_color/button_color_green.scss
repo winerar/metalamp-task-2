@@ -1,0 +1,10 @@
+@import '@/variables.scss';
+
+.button_color_green {
+	background: $gradient-green;
+
+	&:hover {
+		background: $gradient-green-50;
+		cursor: pointer;
+	}
+}
