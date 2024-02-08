@@ -1,6 +1,7 @@
 include ../bemto/bemto
 include ./components/button/button
 include ./components/rate-button/rate-button
+include ./components/like-button/like-button
 
 doctype html
 html(lang="en")
@@ -12,20 +13,19 @@ html(lang="en")
     h2 Next one is the item title inside widgets
     h3 This is a label or CTA text
     p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+
+    h3 Like button 
+
+    p 
+      +like-button({active: false, text: '2'})
+    p 
+      +like-button({active: true, text: '12'})
     
     h3 Rate button 
     p
-      +rate-button({rating: 5})
-    p
       +rate-button({rating: 4})
     p
-      +rate-button({rating: 3})
-    p
-      +rate-button({rating: 2})
-    p
-      +rate-button({rating: 1})
-    p
-      +rate-button({rating: 0})
+      +rate-button({rating: 5})
     
     h3 Buttons
     p
