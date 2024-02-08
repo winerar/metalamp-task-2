@@ -15,13 +15,33 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].[contenthash].js',
   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, 'src'),
+    }
+  },
   module: {
     rules: [
-      pug,
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
+      },
       {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader',],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]', // сохранить оригинальное имя файла и расширение
+              outputPath: 'images/', // путь для сохранения обработанных файлов
+            }
+          }
+        ]
+      }
     ],
   },
   plugins: [
