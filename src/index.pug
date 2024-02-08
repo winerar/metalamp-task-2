@@ -1,5 +1,6 @@
 include ../bemto/bemto
 include ./components/button/button
+include ./components/rate-button/rate-button
 
 doctype html
 html(lang="en")
@@ -11,10 +12,31 @@ html(lang="en")
     h2 Next one is the item title inside widgets
     h3 This is a label or CTA text
     p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+    
+    h3 Rate button 
+    p
+      +rate-button({rating: 5})
+    p
+      +rate-button({rating: 4})
+    p
+      +rate-button({rating: 3})
+    p
+      +rate-button({rating: 2})
+    p
+      +rate-button({rating: 1})
+    p
+      +rate-button({rating: 0})
+    
     h3 Buttons
-    +button({title: 'Click Me'})
-    +button({title: 'Click Me', type: 'outline'})
-    +button({title: 'Click Me', type: 'link'})
-    +button({title: 'Перейти к оплате', width: 'full', icon: true})
-    +button({type: 'circle', title: '1'})
-    +button({type: 'circle', icon: true, color: 'green'})
+    p
+      +button({title: 'Click Me'})
+    p
+      +button({title: 'Click Me', type: 'outline'})
+    p
+      +button({title: 'Click Me', type: 'link'})
+    p
+      +button({title: 'Перейти к оплате', width: 'full', icon: true})
+    p
+      +button({type: 'circle', title: '1'})
+    p
+      +button({type: 'circle', icon: true, color: 'green'})
