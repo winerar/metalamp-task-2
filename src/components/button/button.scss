@@ -1,38 +1,40 @@
 @import '@/variables.scss';
 
 .button {
-  padding: .9375rem 1.25rem;
-  min-width: 2.75rem;
-  max-width: 20rem;
-  height: 2.75rem;
-  position: relative;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	padding: 0.9375rem 1.25rem;
+	min-width: 2.75rem;
+	max-width: 20rem;
+	height: 2.75rem;
+	position: relative;
 
-  background: $gradient-purple;
-  color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  font-family: 'Montserrat';
-  font-size: .75rem;
-  font-weight: 700;
-  text-transform: uppercase;
+	background: $gradient-purple;
+	color: $white;
 
-  border: none;
-  border-radius: 2rem;
-  box-sizing: border-box;
+	font-family: 'Montserrat';
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
 
-  transition: $transition;
+	border: none;
+	border-radius: 2rem;
+	box-sizing: border-box;
 
-  &:hover {
-    background: $gradient-purple-50;
-    cursor: pointer;
-  }
+	transition: $transition;
+
+	&:hover {
+		background: $gradient-purple-50;
+		cursor: pointer;
+	}
 }
 
 @import './__icon/button__icon.scss';
 @import './__wrapper/button__wrapper.scss';
 @import './_type/button_type_outline.scss';
 @import './_type/button_type_link.scss';
+@import './_type/button_type_circle.scss';
+@import './_color/button_color_green.scss';
 @import './_width/button_width_f.scss';
