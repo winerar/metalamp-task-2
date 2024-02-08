@@ -1,4 +1,4 @@
-@import './components/button/button.scss';
+@import '@/variables.scss';
 
 @font-face {
 	font-family: 'Montserrat';
@@ -55,3 +55,6 @@ h3 {
 
 	color: $dark-shade-100;
 }
+
+@import './components/button/button.scss';
+@import './components/rate-button/rate-button.scss';

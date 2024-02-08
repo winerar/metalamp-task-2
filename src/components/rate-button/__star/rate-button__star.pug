@@ -1,0 +1,6 @@
+mixin rate-button__star(options)
+  button.rate-button__star
+    if options.filled
+      img(src=require(`@/components/rate-button/__star/star.svg`).default)
+    else 
+      img(src=require(`@/components/rate-button/__star/star_border.svg`).default)

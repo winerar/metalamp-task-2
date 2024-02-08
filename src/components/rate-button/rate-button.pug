@@ -1,0 +1,9 @@
+include ./__star/rate-button__star
+
+mixin rate-button(options)
+  span.rate-button
+    - for (let i = 0; i < 5; i++)
+      if i < options.rating
+        +rate-button__star({filled: true})
+      else
+        +rate-button__star({filled: false})
